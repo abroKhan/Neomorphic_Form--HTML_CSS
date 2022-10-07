@@ -46,3 +46,17 @@ form {
     padding: 32px 0;
 }
 
+button, input {
+    background-color: var(--bg-Color);
+    font-size: var(--ruler);
+    border-radius: calc(var(--ruler) * 20);
+    border: none;
+    outline: none;
+    text-shadow: 1px 1px 0 var(--white-Color);
+}
+
+label {
+    width: 100%;
+    display: block;
+    margin-bottom: calc(var(--ruler * 1.5));
+}

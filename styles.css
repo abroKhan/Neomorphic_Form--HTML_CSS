@@ -24,7 +24,7 @@ body, html {
 
 p, input, select, button {
     font-size: var(--ruler);
-    letter-spacing: 1.3;
+    letter-spacing: 1.4;
 }
 
 /* === ELEMENTS STYLING === */
@@ -37,7 +37,7 @@ p, input, select, button {
 }
 
 form {
-    width: 350px;
+    width: 300px;
     padding: var(--ruler);
 }
 
@@ -47,6 +47,7 @@ form {
 }
 
 button, input {
+    width: 100%;
     background-color: var(--bg-Color);
     font-size: var(--ruler);
     border-radius: calc(var(--ruler) * 20);
@@ -63,10 +64,32 @@ label {
 }
 
 input {
-    width: 100%;
     appearance: none;
     margin-right: calc(var(--ruler / 2));
     margin-bottom: 10px;
     box-shadow: inset 2px 2px 5px var(--shadow-Color),
         inset -5px -5px 10px var(--white-Color);
+}
+
+input:focus {
+    box-shadow: inset 1px 1px 2px var(--shadow-Color),
+        inset -1px -1px 2px var(--white-Color);
+}
+
+button {
+    color: #61677C;
+    font-weight: 500;
+    box-shadow: -5px -5px 20px var(--white-Color),
+        5px 5px 20px var(--shadow-Color);
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: -2px -2px 5px var(--white-Color),
+        2px 2px 5px var(--shadow-Color);
+}
+
+button:active {
+    box-shadow: inset 1px 1px 2px var(--shadow-Color),
+        inset -1px -1px 2px var(--white-Color);
 }

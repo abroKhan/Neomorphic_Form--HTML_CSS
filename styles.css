@@ -23,6 +23,7 @@ body, html {
 }
 
 p, input, select, button {
+    color: #61677C;
     font-size: var(--ruler);
     letter-spacing: 1.4px;
 }
@@ -79,7 +80,6 @@ input:focus {
 }
 
 button {
-    color: #61677C;
     font-weight: 500;
     gap: 1rem;
     box-shadow: -5px -5px 20px var(--white-Color),
@@ -99,12 +99,11 @@ button:active {
 }
 
 p {
-    color: #61677C;
     font-size: 14px;
     letter-spacing: normal;
 }
 
 p a {
     text-decoration: none;
-    color: black;
+    color: rgb(26, 26, 26);
 }

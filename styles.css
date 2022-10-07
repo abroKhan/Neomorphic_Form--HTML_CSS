@@ -1,0 +1,27 @@
+/* ==== GOOGLE FONTS IMPORT LINK ==== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+/* === root Classes */
+:root {
+    --ruler: 16px;
+    --white-Color: #FFF;
+    --bg-Color: #EBECF0;
+    --red-Color: #AE1100;
+    --shadow-Color: #BABECC;
+}
+
+body, html {
+    background: var(--bg-Color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, input, select, button {
+    font-size: var(--ruler);
+    letter-spacing: 1.3;
+}

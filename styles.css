@@ -24,7 +24,7 @@ body, html {
 
 p, input, select, button {
     font-size: var(--ruler);
-    letter-spacing: 1.4;
+    letter-spacing: 1.4px;
 }
 
 /* === ELEMENTS STYLING === */
@@ -43,7 +43,11 @@ form {
 
 .segment {
     text-align: center;
-    padding: 32px 0;
+    padding: 20px 0;
+}
+
+.segment h1 {
+    font-size: 1.5rem;
 }
 
 button, input {
@@ -54,21 +58,19 @@ button, input {
     border: none;
     outline: none;
     padding: 10px;
+    margin-bottom: 20px;
     text-shadow: 1px 1px 0 var(--white-Color);
-}
-
-label {
-    width: 100%;
-    display: block;
-    margin-bottom: calc(var(--ruler * 1.5));
 }
 
 input {
     appearance: none;
-    margin-right: calc(var(--ruler / 2));
-    margin-bottom: 10px;
     box-shadow: inset 2px 2px 5px var(--shadow-Color),
         inset -5px -5px 10px var(--white-Color);
+}
+
+input::placeholder {
+    color: #61677C;
+    font-size: 13px;
 }
 
 input:focus {
@@ -79,12 +81,14 @@ input:focus {
 button {
     color: #61677C;
     font-weight: 500;
+    gap: 1rem;
     box-shadow: -5px -5px 20px var(--white-Color),
         5px 5px 20px var(--shadow-Color);
     cursor: pointer;
 }
 
 button:hover {
+    color: var(--shadow-Color);
     box-shadow: -2px -2px 5px var(--white-Color),
         2px 2px 5px var(--shadow-Color);
 }
@@ -92,4 +96,15 @@ button:hover {
 button:active {
     box-shadow: inset 1px 1px 2px var(--shadow-Color),
         inset -1px -1px 2px var(--white-Color);
+}
+
+p {
+    color: #61677C;
+    font-size: 14px;
+    letter-spacing: normal;
+}
+
+p a {
+    text-decoration: none;
+    color: black;
 }

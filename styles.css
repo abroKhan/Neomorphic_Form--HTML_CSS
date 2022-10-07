@@ -52,6 +52,7 @@ button, input {
     border-radius: calc(var(--ruler) * 20);
     border: none;
     outline: none;
+    padding: 10px;
     text-shadow: 1px 1px 0 var(--white-Color);
 }
 
@@ -59,4 +60,13 @@ label {
     width: 100%;
     display: block;
     margin-bottom: calc(var(--ruler * 1.5));
+}
+
+input {
+    width: 100%;
+    appearance: none;
+    margin-right: calc(var(--ruler / 2));
+    margin-bottom: 10px;
+    box-shadow: inset 2px 2px 5px var(--shadow-Color),
+        inset -5px -5px 10px var(--white-Color);
 }
